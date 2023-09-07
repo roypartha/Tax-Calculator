@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "username": "user1",
+    "password": "$2a$10$mPdflAt9A64sll.DozedLuEb3xkR2bCBcTxmRklhC0ZfWebOTasCO",
+    "authorities": [
+      {
+        "id": 1,
+        "name": "ROLE_USER",
+        "authority": "ROLE_USER"
+      },
+      {
+        "id": 2,
+        "name": "ROLE_ADMIN",
+        "authority": "ROLE_ADMIN"
+      }
+    ],
+    "enabled": true
+  },
+  {
+    "id": 2,
+    "username": "user2",
+    "password": "$2a$04$ddsTKUiHgA8XpuzXxQSuduH3M4IAXU4dm2exv1G/DoP5LZOo4Mlwa",
+    "authorities": [
+      {
+        "id": 1,
+        "name": "ROLE_USER",
+        "authority": "ROLE_USER"
+      }
+    ],
+    "enabled": true
+  },
+  {
+    "id": 11,
+    "username": "user3",
+    "password": "$2a$10$XO01mc6X6fkww49JxWImiudaTGC/C0g9sJ7USZaZ.N/Nr2.ri4TDa",
+    "authorities": [
+      {
+        "id": 1,
+        "name": "ROLE_USER",
+        "authority": "ROLE_USER"
+      }
+    ],
+    "enabled": true
+  },
+  {
+    "id": 14,
+    "username": "admin1",
+    "password": "$2a$04$sNsQamWPO/oTwG9NeBmJxuZVOwyGIMX20qOlNXzw0fACXU6vvZ1/m",
+    "authorities": [
+      {
+        "id": 2,
+        "name": "ROLE_ADMIN",
+        "authority": "ROLE_ADMIN"
+      }
+    ],
+    "enabled": true
+  }
+]

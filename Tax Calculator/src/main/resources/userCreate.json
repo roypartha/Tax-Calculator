@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "username": "user1",
+  "password": "$2a$10$mPdflAt9A64sll.DozedLuEb3xkR2bCBcTxmRklhC0ZfWebOTasCO",
+  "authorities": [
+    {
+      "id": 1,
+      "name": "ROLE_USER",
+      "authority": "ROLE_USER"
+    },
+    {
+      "id": 2,
+      "name": "ROLE_ADMIN",
+      "authority": "ROLE_ADMIN"
+    }
+  ],
+  "enabled": true
+}

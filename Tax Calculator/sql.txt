@@ -1,0 +1,53 @@
+create table test.tax
+(
+    id                     bigint auto_increment
+        primary key,
+    category               varchar(50) not null,
+    username               varchar(50) not null,
+    basic_salary           int         not null,
+    basic_salary_exemption int         null,
+    basic_salary_taxable   int         null,
+    houserent              int         not null,
+    houserent_exemption    int         null,
+    houserent_taxable      int         null,
+    medical                int         not null,
+    medical_exemption      int         null,
+    medical_taxable        int         null,
+    conveyance             int         not null,
+    conveyance_exemption   int         null,
+    conveyance_taxable     int         null,
+    commission             int         not null,
+    commission_exemption   int         null,
+    commission_taxable     int         null,
+    bonus                  int         not null,
+    bonus_exemption        int         null,
+    bonus_taxable          int         null,
+    totalIncome            int         null,
+    totalTaxable           int         null,
+    grossTax               int         null
+);
+
+create table test.authority
+(
+    id   bigint auto_increment
+        primary key,
+    name varchar(50) null
+);
+create table test.user
+(
+    id         bigint auto_increment
+        primary key,
+    username   varchar(50)          not null,
+    password   varchar(100)         not null,
+    is_enabled tinyint(1) default 1 not null
+);create table test.user_authority_map
+(
+    id           bigint auto_increment
+        primary key,
+    user_id      bigint null,
+    authority_id bigint null,
+    constraint user_authority_map_authority_id_fk
+        foreign key (authority_id) references test.authority (id),
+    constraint user_authority_map_user_id_fk
+        foreign key (user_id) references test.user (id)
+);

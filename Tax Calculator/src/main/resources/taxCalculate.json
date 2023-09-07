@@ -1,0 +1,10 @@
+{
+  "category": "General",
+  "name": "user1",
+  "basic_salary": 1000000,
+  "houserent": 2000,
+  "medical": 2000,
+  "conveyance": 1000,
+  "commission": 2000,
+  "bonus": 2000
+}
